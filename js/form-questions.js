@@ -118,7 +118,7 @@ $(document).ready(function () {
       headers: {
         Accept: "application/json, text/plain, */*",
         Authorization:
-          "Basic Njc5Y2JhNDUtZDk3Ni00OTdiLWFjM2ItMzUxN2QyNGM1N2Vh=="
+          "Basic YzI3YWE5ZWQtMTMxMy00NDNkLWIxNWMtMmJiODdkMzc2Mjdh"
       }
     };
     $.ajax(settings).done(function (json) {
