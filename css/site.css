@@ -1221,7 +1221,7 @@ table th {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   z-index: 40;
   padding: 0;
 }
@@ -2103,7 +2103,7 @@ section.padding-top-quarter {
   padding: 25px 0 75px 0;
 }
 section.first {
-  padding: 40px;
+  padding: 20px;
 }
 section.higher-z-index {
   z-index: 250;
@@ -2337,7 +2337,6 @@ footer nav ul li {
   .wrap.larger {
     width: 100%;
     max-width: 100%;
-    padding: 0 50px;
   }
   .wrap.smaller {
     width: 100%;
@@ -2351,7 +2350,7 @@ footer nav ul li {
   }
 
   .box.padding-100-top-bottom {
-    padding: 50px;
+    padding: 20px;
   }
 
   .form-right {
