@@ -810,8 +810,8 @@ table th {
   max-width: 1600px;
 }
 .wrap.larger {
-  width: 87.5%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
 }
 .wrap.smaller {
   max-width: 800px;
