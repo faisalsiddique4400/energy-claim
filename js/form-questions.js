@@ -498,7 +498,7 @@ $(document).ready(function () {
       template_params: {
         from_name: "",
         to_name: "",
-        data
+        data: JSON.stringify(data)
       }
     };
 
@@ -508,10 +508,10 @@ $(document).ready(function () {
       contentType: "application/json"
     })
       .done(() => {
-        console.log("EMAIL SENT");
+        window.location.href("/step-signature");
       })
       .fail((e) => {
-        console.log(e);
+        alert("could not submit your form");
       });
   }
   // Step 5 back
