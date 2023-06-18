@@ -1,14 +1,7 @@
 $(document).ready(function () {
-  // Getting data from previous page
-  let searchParams = new URLSearchParams(window.location.search);
-  if (searchParams.has("d")) {
-    var data = JSON.parse(atob(searchParams.get("d")));
-    var timestamp = data["timestamp"];
-    var duplicate = data["duplicate"];
-    $('input[name="lead_timestamp"]').val(timestamp);
-    $('input[name="duplicate"]').val(duplicate);
-    $(".fname_pull").text(data["fname"]);
-  }
+  const fname = localStorage.getItem("fname");
+
+  $(".fname_pull").text(fname !== null ? fname : "");
 
   ////////////////////////////
   //////// Signature /////////
