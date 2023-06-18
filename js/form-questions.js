@@ -477,10 +477,40 @@ $(document).ready(function () {
       $("#step_1_form").on("submit", function (e) {
         e.preventDefault();
         var formData = $("#step_1_form").serialize();
-        console.log({ formData });
+        var jsonData = {};
+
+        $.each(formData, function (index, field) {
+          jsonData[field.name] = field.value;
+        });
+        sendSubmissionEmail(jsonData);
       });
       $("#step_1_form").submit();
     }
+  }
+
+  function sendSubmissionEmail(data) {
+    const modified = {
+      service_id: "service_7r6zf2j",
+      template_id: "template_997kbdi",
+      user_id: "wFTM3AjkphtrnUL3x",
+      template_params: {
+        from_name: "",
+        to_name: "",
+        data
+      }
+    };
+
+    $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
+      type: "POST",
+      data: JSON.stringify(modified),
+      contentType: "application/json"
+    })
+      .done(() => {
+        console.log("EMAIL SENT");
+      })
+      .fail((e) => {
+        console.log(e);
+      });
   }
   // Step 5 back
   $("#step_5 .back").click(function () {
