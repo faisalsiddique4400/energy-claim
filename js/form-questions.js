@@ -474,12 +474,12 @@ $(document).ready(function () {
       $(validate_telephone_number).val() == "true" &&
       $(validate_email_address).val() == "true"
     ) {
-      $("#step_1_form").submit();
       $("#step_1_form").on("submit", function (e) {
         e.preventDefault();
         var formData = $("#step_1_form").serialize();
         console.log({ formData });
       });
+      $("#step_1_form").submit();
     }
   }
   // Step 5 back

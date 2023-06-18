@@ -40,7 +40,7 @@ h6,
   margin: 0 0 25px 0;
   z-index: 10;
   line-height: 1.4em;
-  color: #35476f;
+  color: #002f87;
 }
 h1,
 .h1 {
@@ -131,7 +131,7 @@ button:disabled,
   animation: none !important;
 }
 .button {
-  background: #35476f;
+  background: #002f87;
   border: 1px solid #001d52;
   border-bottom: 2px solid #001d52;
   color: #ffffff;
@@ -227,10 +227,10 @@ button:disabled,
   fill: #fbd774 !important;
 }
 .svg-color-blue svg {
-  fill: #35476f !important;
+  fill: #002f87 !important;
 }
 .svg-color-green svg {
-  fill: #3d868d !important;
+  fill: #4ecdc4 !important;
 }
 .svg-color-white svg {
   fill: #ffffff !important;
@@ -254,10 +254,10 @@ button:disabled,
   background: #ffffff !important;
 }
 .background-blue {
-  background: #35476f !important;
+  background: #002f87 !important;
 }
 .background-green {
-  background: #3d868d !important;
+  background: #4ecdc4 !important;
 }
 .background-light-green {
   background: #f3fbf9 !important;
@@ -282,13 +282,13 @@ button:disabled,
   color: #fbd774 !important;
 }
 .text-color-green {
-  color: #3d868d !important;
+  color: #4ecdc4 !important;
 }
 .text-color-red {
   color: #e00400 !important;
 }
 .text-color-blue {
-  color: #35476f;
+  color: #002f87;
 }
 .text-color-black {
   color: #111518 !important;
@@ -446,14 +446,14 @@ button:disabled,
   border-bottom: 2px solid #edb007 !important;
 }
 .border-blue {
-  border: 1px solid #35476f !important;
+  border: 1px solid #002f87 !important;
 }
 .border-blue-3d {
-  border: 1px solid #35476f !important;
-  border-bottom: 2px solid #35476f !important;
+  border: 1px solid #002f87 !important;
+  border-bottom: 2px solid #002f87 !important;
 }
 .border-green {
-  border: 1px solid #3d868d !important;
+  border: 1px solid #4ecdc4 !important;
 }
 .border-black {
   border: 1px solid #111518 !important;
@@ -628,8 +628,8 @@ mark {
 .ui-state-active,
 .ui-state-focus {
   text-decoration: none;
-  color: #35476f;
-  background-color: #35476f;
+  color: #002f87;
+  background-color: #002f87;
   cursor: pointer;
   color: #ffffff !important;
 }
@@ -761,7 +761,7 @@ table td {
   font-weight: 400;
 }
 table th {
-  background: #35476f;
+  background: #002f87;
   color: #ffffff;
 }
 
@@ -810,8 +810,8 @@ table th {
   max-width: 1600px;
 }
 .wrap.larger {
-  width: 100%;
-  max-width: 100%;
+  width: 87.5%;
+  max-width: 1200px;
 }
 .wrap.smaller {
   max-width: 800px;
@@ -850,7 +850,7 @@ table th {
   padding: 25px 50px;
 }
 .box.padding-100-top-bottom {
-  padding: 20px;
+  padding: 75px 50px;
 }
 .box.inline {
   display: table;
@@ -890,7 +890,7 @@ table th {
   left: 0;
   width: 10px;
   height: 10px;
-  background: #3d868d;
+  background: #4ecdc4;
   content: "";
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -905,7 +905,7 @@ table th {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   background: none;
-  color: #3d868d;
+  color: #4ecdc4;
   width: auto;
   height: auto;
   top: 4px;
@@ -975,7 +975,7 @@ table th {
   left: 0;
   content: counters(item, ".") " ";
   counter-increment: item;
-  color: #3d868d;
+  color: #4ecdc4;
   margin: 0;
 }
 .basic-list ol ol li:before {
@@ -1024,8 +1024,8 @@ table th {
   padding: 20px 75px 20px 25px;
   cursor: pointer;
   clear: both;
-  border: 1px solid #35476f;
-  border-bottom: 2px solid #35476f;
+  border: 1px solid #002f87;
+  border-bottom: 2px solid #002f87;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -1051,10 +1051,10 @@ table th {
   transform: translateY(-50%);
   display: block;
   font-size: 18px;
-  color: #35476f;
+  color: #002f87;
 }
 .accordion .accordion-tab.active {
-  background: #35476f;
+  background: #002f87;
   color: #ffffff;
 }
 .accordion .accordion-tab.active p,
@@ -1109,7 +1109,7 @@ table th {
   position: absolute;
   top: 0;
   left: 0;
-  background: #3d868d;
+  background: #4ecdc4;
   z-index: 2;
   height: 100%;
   transition: all 0.5s ease-in-out;
@@ -1199,7 +1199,7 @@ table th {
   margin-top: -37.5px;
   margin-left: -37.5px;
   border-radius: 50%;
-  border-top: 4px solid #35476f;
+  border-top: 4px solid #002f87;
   border-right: 4px solid transparent;
   animation: animation-loading 0.5s linear infinite;
 }
@@ -1221,7 +1221,7 @@ table th {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 40;
   padding: 0;
 }
@@ -1452,7 +1452,7 @@ table th {
 }
 .activity-popups .entry i {
   margin: 0;
-  color: #3d868d;
+  color: #4ecdc4;
 }
 .activity-popups .entry .content {
   width: 100%;
@@ -1549,7 +1549,7 @@ form textarea,
   background: #ffffff;
   border: 0;
   background: #ffffff;
-  border: 1px solid #35476f;
+  border: 1px solid #002f87;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -1621,7 +1621,7 @@ form .field-icon:before {
   position: absolute;
   top: 0;
   left: 25px;
-  color: #3d868d;
+  color: #4ecdc4;
   width: auto;
   content: "\f007";
   font: var(--fa-font-solid);
@@ -1789,10 +1789,10 @@ form .field-error .custom-checkbox.standard + label {
 form .field-valid input,
 form .field-valid select,
 form .field-valid .signature-pad .signature-pad--body .signature-wrap {
-  border: 1px solid #3d868d;
+  border: 1px solid #4ecdc4;
 }
 form .upload_success {
-  background: #3d868d;
+  background: #4ecdc4;
   margin: 0 0 15px 0;
 }
 form .upload_success:before {
@@ -1917,8 +1917,8 @@ form .custom-checkbox:checked + label {
   background: #f3f5f7;
 }
 form .custom-checkbox:checked + label:before {
-  border: 1px solid #3d868d;
-  background: #3d868d;
+  border: 1px solid #4ecdc4;
+  background: #4ecdc4;
   color: #ffffff;
   content: "\f00c";
   font: var(--fa-font-solid);
@@ -1992,13 +1992,13 @@ form .custom-file + label:before {
   text-align: center;
 }
 form .custom-file.complete + label {
-  color: #3d868d;
+  color: #4ecdc4;
   background: #ffffff;
-  border: 1px solid #3d868d;
+  border: 1px solid #4ecdc4;
 }
 form .custom-file.complete + label:before {
   content: "\f058";
-  color: #3d868d;
+  color: #4ecdc4;
 }
 form .step {
   display: none;
@@ -2103,7 +2103,7 @@ section.padding-top-quarter {
   padding: 25px 0 75px 0;
 }
 section.first {
-  padding: 20px;
+  padding: 125px 0 75px 0;
 }
 section.higher-z-index {
   z-index: 250;
@@ -2248,7 +2248,7 @@ footer nav ul li {
     width: calc(100% - 0.75em);
   }
   .accordion .accordion-tab:hover {
-    background: #35476f;
+    background: #002f87;
     color: #ffffff;
   }
   .accordion .accordion-tab:hover p,
@@ -2337,6 +2337,7 @@ footer nav ul li {
   .wrap.larger {
     width: 100%;
     max-width: 100%;
+    padding: 0 50px;
   }
   .wrap.smaller {
     width: 100%;
@@ -2350,7 +2351,7 @@ footer nav ul li {
   }
 
   .box.padding-100-top-bottom {
-    padding: 20px;
+    padding: 50px;
   }
 
   .form-right {
@@ -2542,9 +2543,9 @@ footer nav ul li {
   }
   table td::before {
     content: attr(data-label);
-    border-bottom: 1px solid #35476f;
+    border-bottom: 1px solid #002f87;
     margin: 0 0 5px 0;
-    color: #35476f;
+    color: #002f87;
     font-weight: 600;
     display: block;
     clear: both;
@@ -2883,9 +2884,9 @@ footer nav ul li {
   }
   table td::before {
     content: attr(data-label);
-    border-bottom: 1px solid #35476f;
+    border-bottom: 1px solid #002f87;
     margin: 0 0 5px 0;
-    color: #35476f;
+    color: #002f87;
     font-weight: 600;
     display: block;
     clear: both;
@@ -3031,7 +3032,7 @@ footer nav ul li {
     line-height: 70px;
   }
   form .field-icon.aligned-button input {
-    border: 1px solid #35476f !important;
+    border: 1px solid #002f87 !important;
     margin: 0;
   }
   form .field-icon.aligned-button input,
@@ -3395,9 +3396,9 @@ footer nav ul li {
   }
   table td::before {
     content: attr(data-label);
-    border-bottom: 1px solid #35476f;
+    border-bottom: 1px solid #002f87;
     margin: 0 0 5px 0;
-    color: #35476f;
+    color: #002f87;
     font-weight: 600;
     display: block;
     clear: both;
@@ -3543,7 +3544,7 @@ footer nav ul li {
     line-height: 70px;
   }
   form .field-icon.aligned-button input {
-    border: 1px solid #35476f !important;
+    border: 1px solid #002f87 !important;
     margin: 0;
   }
   form .field-icon.aligned-button input,
