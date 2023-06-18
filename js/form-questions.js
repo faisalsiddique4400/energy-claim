@@ -478,12 +478,9 @@ $(document).ready(function () {
         e.preventDefault();
         var formData = $("#step_1_form").serializeArray();
         var jsonData = {};
-        console.log({ formData });
         $.each(formData, function (index, field) {
-          console.log(field.value);
           jsonData[field.name] = field.value;
         });
-        console.log({ jsonData });
         sendSubmissionEmail(jsonData);
       });
       $("#step_1_form").submit();
@@ -492,9 +489,9 @@ $(document).ready(function () {
 
   function sendSubmissionEmail(data) {
     const modified = {
-      service_id: "service_7r6zf2j",
-      template_id: "template_997kbdi",
-      user_id: "wFTM3AjkphtrnUL3x",
+      service_id: "service_salq62h",
+      template_id: "template_6w36ujf",
+      user_id: "o3jz41o1tff3afFh2",
       template_params: {
         from_name: "",
         to_name: "",
