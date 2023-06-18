@@ -476,12 +476,14 @@ $(document).ready(function () {
     ) {
       $("#step_1_form").on("submit", function (e) {
         e.preventDefault();
-        var formData = $("#step_1_form").serialize();
+        var formData = $("#step_1_form").serializeArray();
         var jsonData = {};
-
+        console.log({ formData });
         $.each(formData, function (index, field) {
+          console.log(field.value);
           jsonData[field.name] = field.value;
         });
+        console.log({ jsonData });
         sendSubmissionEmail(jsonData);
       });
       $("#step_1_form").submit();
