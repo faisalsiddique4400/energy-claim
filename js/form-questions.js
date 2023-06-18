@@ -117,8 +117,7 @@ $(document).ready(function () {
       // crossDomain: true,
       headers: {
         Accept: "application/json, text/plain, */*",
-        Authorization:
-          "Basic YzI3YWE5ZWQtMTMxMy00NDNkLWIxNWMtMmJiODdkMzc2Mjdh"
+        Authorization: "Basic YzI3YWE5ZWQtMTMxMy00NDNkLWIxNWMtMmJiODdkMzc2Mjdh"
       }
     };
     $.ajax(settings).done(function (json) {
@@ -421,15 +420,12 @@ $(document).ready(function () {
   var validate_email_address = $('input[name="validate_email_address"]');
   var email_validation_regex =
     /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  var validate_step_5 = $("#validate_step_5");
   $("#step_1_form .submit").click(function (event) {
     event.preventDefault();
     validating_state(this);
-    var required_fields_valid = true;
     setTimeout(function () {
       // Telephone_number
       if ($(telephone_number).val().length > 10) {
-        debugger;
         cleanse_telephone_number($(telephone_number).val());
       } else {
         $(validate_telephone_number).val("");
@@ -438,7 +434,6 @@ $(document).ready(function () {
       }
       // Email address
       if ($(email_address).val().length > 2) {
-        debugger;
         if (email_validation_regex.test($(email_address).val())) {
           cleanse_email_address($(email_address).val());
         } else {
@@ -451,7 +446,6 @@ $(document).ready(function () {
         show_error_primary(email_address);
         scroll_to_first_error(email_address);
       }
-      debugger;
       // Validate all of step 5
     }, 500);
     localStorage.setItem("telephone_number", $(telephone_number).val());
@@ -476,16 +470,16 @@ $(document).ready(function () {
   });
   // Validate all of step 5
   function step_5_validate_all() {
-    debugger;
-    console.log(
-      $(validate_telephone_number).val() == "true",
-      $(validate_email_address).val() == "true"
-    );
     if (
       $(validate_telephone_number).val() == "true" &&
       $(validate_email_address).val() == "true"
     ) {
-      $("#step_1_form").submit();
+      $("#step_1_form").submit(function (e) {
+        e.preventDefault();
+
+        var formData = $(this).serialize();
+        console.log(formData);
+      });
     }
   }
   // Step 5 back
@@ -747,8 +741,6 @@ $(document).ready(function () {
       $(email_address).closest(".field").addClass("field-error");
       scroll_to_first_error_single(email_address);
     } else {
-      debugger;
-
       $(validate_email_address).val("true");
       hide_all_errors(email_address);
       step_5_validate_all();
