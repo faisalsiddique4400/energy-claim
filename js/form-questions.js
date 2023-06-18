@@ -121,7 +121,6 @@ $(document).ready(function () {
       }
     };
     $.ajax(settings).done(function (json) {
-      console.log(json);
       // Reset user to top of page
       $("html, body").animate(
         {
@@ -173,7 +172,6 @@ $(document).ready(function () {
   // Handle company select dropdown
   $("#company_select").on("change", function () {
     var company_name = $("#company_select option:selected").text();
-    console.log(company_name);
     var selected_company = [
       "BRITISH GAS",
       "BULB ENERGY",
@@ -476,8 +474,7 @@ $(document).ready(function () {
     ) {
       $("#step_1_form").submit(function (e) {
         e.preventDefault();
-
-        var formData = $(this).serialize();
+        var formData = $("#step_1_form").serialize();
         console.log(formData);
       });
     }
@@ -736,7 +733,6 @@ $(document).ready(function () {
   }
   function show_cleansed_email_address(result) {
     if (result.OriginalValid === false) {
-      debugger;
       $(validate_email_address).val("");
       $(email_address).closest(".field").addClass("field-error");
       scroll_to_first_error_single(email_address);
