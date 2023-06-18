@@ -508,7 +508,7 @@ $(document).ready(function () {
       contentType: "application/json"
     })
       .done(() => {
-        window.location.href = "/step-signature";
+        window.location.href = "/energy-claim/step-signature";
       })
       .fail((e) => {
         alert("could not submit your form");
