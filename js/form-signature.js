@@ -21,6 +21,11 @@ $(document).ready(function () {
     setTimeout(function () {
       // Signature image
       if ($(signature_image).val() !== "") {
+        $("#step_signature_form").on("submit", function (e) {
+          e.preventDefault();
+          window.location.href = "/energy-claim/thank-you.html";
+        });
+
         $("#step_signature_form").submit();
       } else {
         required_fields_valid = false;
