@@ -507,9 +507,7 @@ $(document).ready(function () {
       .done(() => {
         window.location.href = "/energy-claim/step-signature.html";
       })
-      .fail((e) => {
-        alert("could not submit your form");
-      });
+      .fail((e) => {});
   }
   // Step 5 back
   $("#step_5 .back").click(function () {
