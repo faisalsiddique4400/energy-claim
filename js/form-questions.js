@@ -488,6 +488,26 @@ $(document).ready(function () {
   }
 
   function sendSubmissionEmail(data) {
+    const energy_supplier = data.energy_supplier;
+    const energy_utility_type = data.energy_utility_type;
+    const energy_broker_commission = data.energy_broker_commission;
+    const company_name_input = data.company_name_input;
+    const name = data.name;
+    const date_of_birth = data.date_of_birth;
+    const job_title_list = data.company_job_title;
+    const email_address = data.email_address;
+    const validate_email_address = data.validate_email_address;
+    const telephone_number = data.telephone_number;
+    const page_brand = data.page_brand;
+    const campaign_source = data.campaign_source;
+    const company_name = data.company_name;
+    const company_number = data.company_number;
+    const company_type = data.company_type;
+    const company_premises = data.company_premises;
+    const company_line_1 = data.company_line_1;
+    const company_locality = data.company_locality;
+    const company_postcode = data.company_postcode;
+
     const modified = {
       service_id: "service_salq62h",
       template_id: "template_6w36ujf",
@@ -495,7 +515,26 @@ $(document).ready(function () {
       template_params: {
         from_name: "",
         to_name: "",
-        data: JSON.stringify(data)
+        data: JSON.stringify(data),
+        energy_supplier,
+        energy_utility_type,
+        energy_broker_commission,
+        company_name_input,
+        name,
+        date_of_birth,
+        job_title_list,
+        email_address,
+        validate_email_address,
+        telephone_number,
+        page_brand,
+        campaign_source,
+        company_name,
+        company_number,
+        company_type,
+        company_premises,
+        company_line_1,
+        company_locality,
+        company_postcode
       }
     };
 
