@@ -492,7 +492,7 @@ $(document).ready(function () {
     const energy_utility_type = data.energy_utility_type;
     const energy_broker_commission = data.energy_broker_commission;
     const company_name_input = data.company_name_input;
-    const name = data.name;
+    const name = `${data.title} ${data.fname} ${data.lname}`;
     const date_of_birth = data.date_of_birth;
     const job_title_list = data.company_job_title;
     const email_address = data.email_address;
