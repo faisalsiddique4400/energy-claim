@@ -704,8 +704,8 @@
                         information will be treated carefully in accordance with
                         our
                         <a
-                          href="https://www.businessenergyclaimguru.co.uk/privacy-policy"
                           class="link privacy_policy_modal"
+                          onclick="onClickPrivacyPolicy()"
                           >privacy policy</a
                         >
                       </p>
@@ -941,15 +941,24 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.viewport@1.0.1/jquery.viewport.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/7fed8b05cd.js"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="js/form-questions.js"></script>
     <script src="js/site-functions.js"></script>
     <script src="js/site-modals.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script>
+      function onClickPrivacyPolicy() {
+        window.open("https://www.businessenergyclaimguru.co.uk/privacy-policy");
+      }
+    </script>
   </body>
 </html>
