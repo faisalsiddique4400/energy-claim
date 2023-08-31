@@ -498,7 +498,6 @@ $(document).ready(function () {
     const email_address = data.email_address;
     const validate_email_address = data.validate_email_address;
     const telephone_number = data.telephone_number;
-    const page_brand = data.page_brand;
     const campaign_source = data.campaign_source;
     const company_name = data.company_name;
     const company_number = data.company_number;
@@ -526,7 +525,6 @@ $(document).ready(function () {
         email_address,
         validate_email_address,
         telephone_number,
-        page_brand,
         campaign_source,
         company_name,
         company_number,
